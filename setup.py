@@ -71,7 +71,11 @@ if _ABLE_TO_COMPILE_EXTENSIONS:
         # this list should be carefully examined when pyarrow lib is
         # upgraded
         arrow_libs_to_copy = {
-            "linux": ["libarrow.so.1000", "libarrow_python.so.1000", "libparquet.so.1000"],
+            "linux": [
+                "libarrow.so.1000",
+                "libarrow_python.so.1000",
+                "libparquet.so.1000",
+            ],
             "darwin": [
                 "libarrow.1000.dylib",
                 "libarrow_python.1000.dylib",
@@ -81,7 +85,11 @@ if _ABLE_TO_COMPILE_EXTENSIONS:
         }
 
         arrow_libs_to_link = {
-            "linux": ["libarrow.so.1000", "libarrow_python.so.1000", "libparquet.so.1000"],
+            "linux": [
+                "libarrow.so.1000",
+                "libarrow_python.so.1000",
+                "libparquet.so.1000",
+            ],
             "darwin": [
                 "libarrow.1000.dylib",
                 "libarrow_python.1000.dylib",
